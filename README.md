@@ -24,7 +24,7 @@ Users are expected to implement their own interrupt service routines
 - Build system: GNU make
 - Basic headers (SFR definitions): included in this project
 
-Note: Currently, this project does not provide SFRbits-style bitfield
+Currently, this project does not provide SFRbits-style bitfield
 structure definitions found in Microchip's official headers.
 Instead, all register access is performed using address-level macros
 and bit masks.
@@ -46,9 +46,10 @@ All source code files in this project -- including but not limited to:
 are released into the public domain.  Where this is not legally possible,  
 they are licensed under the Creative Commons Zero (CC0) license.
 
-Note: The contents of this README file are distributed under
+The contents of this README file are distributed under
 the BSD license described below, and are *not* covered
 by the public domain dedication applied to the source code.
+You can safely delete this README once you've customized the project.
 
 ## Disclaimer
 
