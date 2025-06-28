@@ -1,4 +1,4 @@
-# A minimalist firmware code skeleton for the PIC32MX210F016B
+# A minimalist firmware code skeleton for the PIC32MX2xx
 
 - https://github.com/clarestudio/pic32mx-template
 
