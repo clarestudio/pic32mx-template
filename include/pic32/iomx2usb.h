@@ -1,0 +1,165 @@
+/* $Id: iomx2usb.h,v 1.4 2016/05/29 20:19:44 clare Exp $ */
+/*
+ * special function registers
+ */
+#ifndef __PIC32MX2XX_USB_H
+#define __PIC32MX2XX_USB_H
+
+/*
+ * USB-OTG registers
+ */
+/* Missing SET and INV */
+#define U1OTGIR		__SFR__(0xBF885040)
+#define U1OTGIRCLR	__SFR__(0xBF885044)
+
+#define U1OTGIE		__SFR__(0xBF885050)
+#define U1OTGIECLR	__SFR__(0xBF885054)
+#define U1OTGIESET	__SFR__(0xBF885058)
+#define U1OTGIEINV	__SFR__(0xBF88505C)
+
+/* Missing CLR, SET and INV */
+#define U1OTGSTAT	__SFR__(0xBF885060)
+
+#define U1OTGCON	__SFR__(0xBF885070)
+#define U1OTGCONCLR	__SFR__(0xBF885074)
+#define U1OTGCONSET	__SFR__(0xBF885078)
+#define U1OTGCONINV	__SFR__(0xBF88507C)
+
+#define U1PWRC		__SFR__(0xBF885080)
+#define U1PWRCCLR	__SFR__(0xBF885084)
+#define U1PWRCSET	__SFR__(0xBF885088)
+#define U1PWRCINV	__SFR__(0xBF88508C)
+
+/* Missing SET and INV */
+#define U1IR		__SFR__(0xBF885200)
+#define U1IRCLR		__SFR__(0xBF885204)
+
+#define U1IE		__SFR__(0xBF885210)
+#define U1IECLR		__SFR__(0xBF885214)
+#define U1IESET		__SFR__(0xBF885218)
+#define U1IEINV		__SFR__(0xBF88521C)
+
+/* Missing SET and INV */
+#define U1EIR		__SFR__(0xBF885220)
+#define U1EIRCLR	__SFR__(0xBF885224)
+
+#define U1EIE		__SFR__(0xBF885230)
+#define U1EIECLR	__SFR__(0xBF885234)
+#define U1EIESET	__SFR__(0xBF885238)
+#define U1EIEINV	__SFR__(0xBF88523C)
+
+/* Missing CLR, SET and INV */
+#define U1STAT		__SFR__(0xBF885240)
+
+#define U1CON		__SFR__(0xBF885250)
+#define U1CONCLR	__SFR__(0xBF885254)
+#define U1CONSET	__SFR__(0xBF885258)
+#define U1CONINV	__SFR__(0xBF88525C)
+
+#define U1ADDR		__SFR__(0xBF885260)
+#define U1ADDRCLR	__SFR__(0xBF885264)
+#define U1ADDRSET	__SFR__(0xBF885268)
+#define U1ADDRINV	__SFR__(0xBF88526C)
+
+#define U1BDTP1		__SFR__(0xBF885270)
+#define U1BDTP1CLR	__SFR__(0xBF885274)
+#define U1BDTP1SET	__SFR__(0xBF885278)
+#define U1BDTP1INV	__SFR__(0xBF88527C)
+
+/* Missing CLR, SET and INV */
+#define U1FRML		__SFR__(0xBF885280)
+
+/* Missing CLR, SET and INV */
+#define U1FRMH		__SFR__(0xBF885290)
+
+#define U1TOK		__SFR__(0xBF8852A0)
+#define U1TOKCLR	__SFR__(0xBF8852A4)
+#define U1TOKSET	__SFR__(0xBF8852A8)
+#define U1TOKINV	__SFR__(0xBF8852AC)
+
+#define U1SOF		__SFR__(0xBF8852B0)
+#define U1SOFCLR	__SFR__(0xBF8852B4)
+#define U1SOFSET	__SFR__(0xBF8852B8)
+#define U1SOFINV	__SFR__(0xBF8852BC)
+
+#define U1BDTP2		__SFR__(0xBF8852C0)
+#define U1BDTP2CLR	__SFR__(0xBF8852C4)
+#define U1BDTP2SET	__SFR__(0xBF8852C8)
+#define U1BDTP2INV	__SFR__(0xBF8852CC)
+
+#define U1BDTP3		__SFR__(0xBF8852D0)
+#define U1BDTP3CLR	__SFR__(0xBF8852D4)
+#define U1BDTP3SET	__SFR__(0xBF8852D8)
+#define U1BDTP3INV	__SFR__(0xBF8852DC)
+
+#define U1CNFG1		__SFR__(0xBF8852E0)
+#define U1CNFG1CLR	__SFR__(0xBF8852E4)
+#define U1CNFG1SET	__SFR__(0xBF8852E8)
+#define U1CNFG1INV	__SFR__(0xBF8852EC)
+
+#define U1EP0		__SFR__(0xBF885300)
+#define U1EP0CLR	__SFR__(0xBF885304)
+#define U1EP0SET	__SFR__(0xBF885308)
+#define U1EP0INV	__SFR__(0xBF88530C)
+#define U1EP1		__SFR__(0xBF885310)
+#define U1EP1CLR	__SFR__(0xBF885314)
+#define U1EP1SET	__SFR__(0xBF885318)
+#define U1EP1INV	__SFR__(0xBF88531C)
+#define U1EP2		__SFR__(0xBF885320)
+#define U1EP2CLR	__SFR__(0xBF885324)
+#define U1EP2SET	__SFR__(0xBF885328)
+#define U1EP2INV	__SFR__(0xBF88532C)
+#define U1EP3		__SFR__(0xBF885330)
+#define U1EP3CLR	__SFR__(0xBF885334)
+#define U1EP3SET	__SFR__(0xBF885338)
+#define U1EP3INV	__SFR__(0xBF88533C)
+#define U1EP4		__SFR__(0xBF885340)
+#define U1EP4CLR	__SFR__(0xBF885344)
+#define U1EP4SET	__SFR__(0xBF885348)
+#define U1EP4INV	__SFR__(0xBF88534C)
+#define U1EP5		__SFR__(0xBF885350)
+#define U1EP5CLR	__SFR__(0xBF885354)
+#define U1EP5SET	__SFR__(0xBF885358)
+#define U1EP5INV	__SFR__(0xBF88535C)
+#define U1EP6		__SFR__(0xBF885360)
+#define U1EP6CLR	__SFR__(0xBF885364)
+#define U1EP6SET	__SFR__(0xBF885368)
+#define U1EP6INV	__SFR__(0xBF88536C)
+#define U1EP7		__SFR__(0xBF885370)
+#define U1EP7CLR	__SFR__(0xBF885374)
+#define U1EP7SET	__SFR__(0xBF885378)
+#define U1EP7INV	__SFR__(0xBF88537C)
+#define U1EP8		__SFR__(0xBF885380)
+#define U1EP8CLR	__SFR__(0xBF885384)
+#define U1EP8SET	__SFR__(0xBF885388)
+#define U1EP8INV	__SFR__(0xBF88538C)
+#define U1EP9		__SFR__(0xBF885390)
+#define U1EP9CLR	__SFR__(0xBF885394)
+#define U1EP9SET	__SFR__(0xBF885398)
+#define U1EP9INV	__SFR__(0xBF88539C)
+#define U1EP10		__SFR__(0xBF8853A0)
+#define U1EP10CLR	__SFR__(0xBF8853A4)
+#define U1EP10SET	__SFR__(0xBF8853A8)
+#define U1EP10INV	__SFR__(0xBF8853AC)
+#define U1EP11		__SFR__(0xBF8853B0)
+#define U1EP11CLR	__SFR__(0xBF8853B4)
+#define U1EP11SET	__SFR__(0xBF8853B8)
+#define U1EP11INV	__SFR__(0xBF8853BC)
+#define U1EP12		__SFR__(0xBF8853C0)
+#define U1EP12CLR	__SFR__(0xBF8853C4)
+#define U1EP12SET	__SFR__(0xBF8853C8)
+#define U1EP12INV	__SFR__(0xBF8853CC)
+#define U1EP13		__SFR__(0xBF8853D0)
+#define U1EP13CLR	__SFR__(0xBF8853D4)
+#define U1EP13SET	__SFR__(0xBF8853D8)
+#define U1EP13INV	__SFR__(0xBF8853DC)
+#define U1EP14		__SFR__(0xBF8853E0)
+#define U1EP14CLR	__SFR__(0xBF8853E4)
+#define U1EP14SET	__SFR__(0xBF8853E8)
+#define U1EP14INV	__SFR__(0xBF8853EC)
+#define U1EP15		__SFR__(0xBF8853F0)
+#define U1EP15CLR	__SFR__(0xBF8853F4)
+#define U1EP15SET	__SFR__(0xBF8853F8)
+#define U1EP15INV	__SFR__(0xBF8853FC)
+
+#endif
