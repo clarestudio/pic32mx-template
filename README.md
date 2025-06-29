@@ -53,7 +53,7 @@ You can safely delete this README once you've customized the project.
 
 ## Disclaimer
 
-Copyright (c) 2025 Shinichi Doyashiki <clare@csel.org>.
+Copyright (c) 2025 Shinichi Doyashiki <clare at csel.org>.
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
