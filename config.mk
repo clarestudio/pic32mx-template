@@ -51,5 +51,6 @@ ${PROG}.dump: ${PROG}.elf
 .S.o:
 	${CC} ${CFLAGS} -o $@ -c $<
 
-write:
-	pic32prog -d /dev/dtyU0 -w ${PROG}.hex
+# this is just an example
+#write:
+#	pic32prog -d /dev/dtyU0 -w ${PROG}.hex
