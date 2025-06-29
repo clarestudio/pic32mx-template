@@ -43,7 +43,7 @@ All source code files in this project, including but not limited to:
 - Makefile and its fragments (Makefile, *.mk)
 
 as well as the overall directory and file structure,
-are released into the public domain.  Where this is not legally possible,  
+are released into the public domain.  Where this is not legally possible,
 they are licensed under the Creative Commons Zero (CC0) license.
 
 The contents of this README file are distributed under
